@@ -1,0 +1,25 @@
+/*Rangos de gerarquia*/
+/*---!important*/
+/*---estilos de linea*/
+/*---identificadotes*/
+/*---clases, pseudo-clases, clases*/
+/*---Elementos, pseudo-elementos*/
+
+
+
+
+/*---!important (no es muy comun)*/
+h1{color: grey !important}
+
+/*--- ↓ estilos de linea ↓ */
+/*style="color: blueviolet;"*/
+
+/*---identificadotes*/
+#color-cafe{color: brown;}
+
+/*---clases, pseudo-clases, clases*/
+[atributo="azul"]{color: azul}
+.color-red{color: green;}
+
+/*---Elementos, pseudo-elementos*/
+h1{color: red;} 

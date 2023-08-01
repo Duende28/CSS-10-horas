@@ -1,0 +1,20 @@
+/* 1 SELECTORES EN CSS*/
+
+*{color: red;} /*selector universal*/
+h1{color: blueviolet;} /*selector de tipo*/
+.titulo2{color: green;}/*selector por clase*/
+#elemento {color: blue;}/*selector por ID (elemento unicos)*/
+[atributo="atributo"] {color: burlywood ;}/*selector por atributo*/
+
+h3 p {color:teal ;}/*selector por descendientes ↓ */
+h3 b {color: lawngreen ;}/*←---*/
+.h3class p {color: fuchsia ;}/*←---*/
+.h3class p span {color: chocolate ;}/*←---*/
+
+.hover:hover {color: yellowgreen;}/*selector por pseudo clase*/
+
+
+
+
+
+
