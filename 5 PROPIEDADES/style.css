@@ -1,0 +1,10 @@
+.contact-form{font-size: 25px;}
+
+/*Formas de modificar una tipografia*/
+.contact-form__h2{
+    font-size: 2em; /*tamño de letra (em [1em es = al valor de la caja contenedora]*/
+    font-family: 'Times New Roman', Times, serif, ; /*fuente de letra*/
+    line-height: 1.9; /*el tamaño nace del centro de la letra*/
+    font-weight: normal; /*grosor de letra*/
+    color: red;
+    }
