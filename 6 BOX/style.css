@@ -1,0 +1,72 @@
+
+/* 1 BLOCK/LINE ELEMENTS*/
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-size: 20px;}
+
+h2{display: inline;} /*LINE ELEMENTS*/
+p{height: 20px;} /*BLOCK ELEMENTS*/
+
+
+/* 2 BOX PROPERTIES*/
+    /*content*/
+    /*padding*/
+    /*border*/
+    /*margin*/
+
+.titulo-3{background-color: blue;
+    display: inline-block; 
+    padding: 20px 60px;
+    /*padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;*/
+    height: 100px;
+    width: 100px;
+    box-sizing: content-box;/*box cover the text*/
+    text-align: center;} /*center the text*/
+
+.titulo-4{background-color: red;
+    display: inline-block; 
+    padding: 20px 50px;
+    /*padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;*/
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;} /*box do not cover the text*/
+
+
+/* 3 MARGIN & BORDER (space between 2 boxes)*/
+
+.margen-1{
+    background-color: red; 
+    display: inline-block;/*same line*/
+    padding: 30px; /*separation of text and box*/
+    box-sizing: border-box;
+    text-align: center;
+    margin: 5px; /*margin between boxes*/
+    border-radius: 30px; /*to circle the borders*/
+    border: 10px solid blue; /*solid, dashed, double, groove, inset, outset, ridge*/
+}
+
+
+/* 4 box/text shadow*/
+
+.shadow{
+    background-color:purple;
+    display: inline-block;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 2em;
+    border: 5px solid red;
+    box-shadow: 2px 4px 15px; /*box shadow*/
+    text-shadow: 2px 2px 7px white ; /*text shadow*/
+    transform: rotate(15deg); /*rotation*/
+}
+
+
