@@ -1,0 +1,16 @@
+/*fixed*/
+/*sticky*/
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-size: 40px;}
+
+body{padding:  100px;}
+
+.fixed{background-color: red;
+position: fixed; /*sticky mantiene el espacio en la pag, por lo que no se necesita padding ni margin*/
+margin: -100px;}
+
+
+    
