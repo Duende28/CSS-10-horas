@@ -1,0 +1,87 @@
+/*block*/
+/*inline (texto)*/
+/*inline-block (bloques con medidas)*/
+/*flex*/
+/*grid*/
+/*inline-flex*/
+/*inline-gird*/
+
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-size: 20px;}
+
+
+.block{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: 10px solid red;
+    background-color: yellow;
+}
+
+.inlineblock{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: 10px solid black;
+    background-color: blue;
+    display: inline-block;
+}
+
+.inline{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: 10px solid green;
+    background-color: orangered;
+    display: inline;
+}
+
+.overflow { margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height: 350px;
+    border: 4px solid red;
+    background-color: gray;
+    overflow: auto ;/*auto (the text stay inside the box)*/
+                    /*scoll (put the scroll even if it is not necesary)*/
+
+}
+
+
+/* FLOAT (easy way to use flex & grid*/
+.contenedor {
+    margin-top: 20px;
+    float: left;
+    padding: 20px;
+}
+.contenedor div {
+    width: 50%;
+    float: right;
+}
+
+.primario{
+    background-color: red;
+
+}
+.secundario{
+    background-color: green;
+}
+
+
+.floatimg{
+    margin-top: 20px;
+    background-color: aqua;
+    display: inline-block;
+    border: 3px solid green;
+    padding: 20px;
+}
+div img{
+    float: left;
+    width: 200px;
+    margin: 10px;
+ 
+
+}
