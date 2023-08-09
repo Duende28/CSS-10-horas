@@ -1,0 +1,77 @@
+/*Pseudo clases*/
+/*hover*/
+/*link*/
+/*visited*/
+/*active*/
+/*focus*/
+/*lang*/
+
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-size: 20px;}
+
+
+
+/*hover*/
+.caja1{
+    height: 200px;
+    width: 200px;
+    background-color:aqua;
+    transition: all 1s; border: 0.5s;
+    border: 5px solid green ;
+}
+
+.caja1:hover{
+    background: aquamarine;
+    height: 300px;
+    width: 300px;
+    border: 5px solid greenyellow;
+    
+}
+
+/*Link & visited (if the link is used it will never be red again)*/
+.link :link{
+    display: block;
+    margin-top: 30px;
+   color: red;}
+
+
+/*active*/
+.caja2{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    margin: 25px;
+}
+
+.caja2:active{
+    background-color: blue;
+    transition: all 1s; width: 200px;
+}
+
+/*focus*/
+
+.caja3{
+    transition: 1s; width: 200px;
+    margin: 25px;
+}
+
+.caja3:focus{
+    background-color: aqua;
+    transition: 1s; width: 200px;}
+
+/*lang*/
+.caja4{
+    
+    margin: 25px;
+}
+
+.caja4 b:lang(es){
+    background-color: aqua;
+    transition: 1s; width: 200px;}
+.caja4 b:lang(en){
+    background-color: fuchsia;
+    transition: 1s; width: 200px;}
+    

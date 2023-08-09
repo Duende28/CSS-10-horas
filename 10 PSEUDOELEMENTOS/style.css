@@ -1,0 +1,67 @@
+/*Pseudo elementos*/
+/*first line (block)*/
+/*first letter (block)*/
+/*placeholder*/
+/*selection*/
+/*after (hijos)*/
+/*before (hijos)*/
+
+
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-size: 20px;}
+
+
+/*first line (afect only first line)*/
+/*first letter (afect only first letter)*/
+.text1{
+    padding: 20px;
+}
+
+.text1::first-line{
+    color: blue;
+    font-size: 2em;
+}
+
+
+/*placeholder (modificar el texto dentro de input)*/
+.placeholder{
+    margin: 50px;
+    padding: 6px;
+    border: 5px solid red;
+}
+
+.placeholder::placeholder{
+    color: red;
+    font-size: 1em;
+    background-color: blue;
+}
+
+/*selection (modiifcar el color de la seleccion)*/
+.selection{
+    margin: 50px;
+    padding: 6px;
+    border: 5px solid red;
+}
+
+.selection::selection{
+    color: red;
+    font-size: 1.5em;
+    background-color: yellow;
+}
+
+
+
+/*before (hijos)*/
+b::before{
+    background-color: gray;
+    content: "me suscribi ";
+    color: wheat;
+}
+/*after (hijos)*/
+b::after{
+    content: "el canal de DUENDE";
+    color: red;
+}
