@@ -1,12 +1,111 @@
-div {
-    width: 45%;
+*{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+div{
+    border-radius: 5px;
+}
+nav{
+    border-radius: 5px;
+}
+
+.nav_responsive_ul{
+    display: none;
+}
+
+.nav{
+    background-color: slateblue;
+}
+
+.nav_li{
     display: inline-block;
-    padding: 20px;
-    background-color: gray;
+    padding: 12px;
+    color: aliceblue;
 }
-h1{
-    font-size: 24px;
+.nav_li:hover>a{
+    color: grey;}
+
+.nav_li:hover{
+    color: grey;}
+
+
+.nav_li a{
+    color: white;
+    text-decoration: none;
 }
 
-.caja2{background: goldenrod;}
+.nav_li i{
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
 
+.nav_responsive_button_container{
+   position: absolute;
+   width: 100%;
+   font-size: 25px;
+   background-color:#69c ;
+   margin-top:-64px ;
+   margin-left: -40px;
+   z-index: 2;
+   
+}
+
+.nav_responsive_button{
+    padding: 6px 20px;
+    text-align: left;
+    width: 100%;
+}
+
+@media (width <= 500px) {
+    .nav_ul {
+        display: none;
+    } 
+
+    .nav{
+        height: 37px;
+        width: 100%;}
+
+    .nav_responsive_ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin-top: 37px;
+        padding-top: 27px;
+        height: 37px;}
+        
+    .nav_li_container{
+        position: relative;
+        top: -1000px;
+        height: calc(100vh - 550px);
+        background-color:#9bf ;
+        left: -40px;/* I had to add this to correct something that I do not understand*/
+        transition: all 1s;
+        z-index: 1;}  
+              
+
+    .nav_responsive_li{
+        width: 100%;
+        padding: 9px 20px;
+    }
+
+    .nav_responsive_li i{
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 15px;
+        width: 30px;
+        color: #016;
+    }
+    .nav_responsive_li a{
+        color: #016;
+        text-decoration: none;
+    }
+
+    .nav_responsive_ul:hover > .nav_li_container{
+        top: -27px;
+    }
+  
+      
+
+}
