@@ -1,0 +1,64 @@
+/*Flex-box*/
+
+/*flex-direction (change the direction of the main axis)*/
+    /*row & column*/
+    /*row & column-reverse (mirror mode)*/
+
+/*Flex-wrap*/
+    /*wrap (make the blocks go DOWN)*/
+    /*wrap-reverse (make the block go UP)*/
+
+/*Justify-content*/
+    /*center*/
+    /*space arround*/
+    /*space between*/
+    /*space-evenly*/
+
+/*Align-items*/
+    /*flex-start*/
+    /*center*/
+    /*flex-end*/
+    /*stretch*/
+    /*baseline (it mix with wrap-reverse)*/
+
+    /*----------------------------------------------*/
+
+/*flex-items*/
+
+/*Align-self*/
+/*flex-grow*/
+/*flex-shrink*/
+/*flex-basis*/
+/*flex*/
+/*order*/
+
+
+*{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    background-color: #248;
+    color: #fff;
+    height: 100px;
+    min-width: 150px;
+    text-align: center;
+    flex-grow: 1;
+    width: 300px;} /* according to the content, they adapt */
+    
+.orange{
+    background-color: orange;
+    flex-shrink: 3; /*otorga mas espacio*/
+}
+.green{
+    background-color: green ;
+    
+}
