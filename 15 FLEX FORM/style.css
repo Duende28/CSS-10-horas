@@ -1,0 +1,95 @@
+*{
+    font-family: sans-serif;
+    font-weight: 100;
+}
+body{
+    background-color: black;
+}
+::placeholder{
+    color: white;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #444;
+    margin: 50px 50px;
+    border: 8px solid #000;
+    outline: 4px solid green;
+}
+
+.form{
+    min-width: 400px;
+    flex: 1;
+
+    text-align: center;
+    padding: 30px; 
+    order: 5;   
+}
+
+.form_input{
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid forestgreen;
+    background-color: gray;
+    color: wheat;
+}
+
+.form_input:focus{
+    background: linear-gradient(to bottom, transparent, #222);
+    outline: none;
+    transition: all .5s;
+
+}
+
+.form textarea{
+    min-height: 140px;
+}
+
+
+.form-img{
+    flex: 1;
+    padding:20px;
+    display: flex;
+    min-width: 300px;
+    max-width: 400px;
+    order: 1;
+}
+
+.form-img div{
+    padding: 10px;
+    background-color: gray;
+}
+
+.img-container{
+    padding:10px;
+    margin: auto;
+    border-radius: 20%;
+    background-color: gray;
+}
+
+.form-img img{
+    width: 90%;
+    
+}
+
+.form_section > button{
+    padding: 1em 0;
+    background: green;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+    width: 80%;
+    align-items: center;
+  }
+  
+.form_section button:hover{
+    background: linear-gradient(to bottom, transparent, rgb(25, 111, 25));
+    transition: 0.5s;
+}
