@@ -1,0 +1,195 @@
+
+*{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 35px;
+}
+
+.container{
+    padding: 20px 5px;
+    background: #86f;
+
+}
+
+.caja{
+    margin: 30px;
+    background: #025;
+    height: 100px;
+    width: 100px;
+    transition-property: left, background; /*propiedades obligatorias*/
+    transition-duration: 3s, 1s; /*transition-delay*/
+    position: relative;
+    left: 0;
+    
+    background: inherit;
+    border: 1px solid #000;
+
+}
+.container:hover > .caja{
+    background: lightgreen;
+    left: 50%;
+}
+
+.caja:first-child{
+    transition-timing-function: linear;
+}
+
+.caja:nth-child(2){
+    transition-timing-function: ease;
+
+}
+.caja:nth-child(3){
+    transition-timing-function: ease-in;
+    
+}
+.caja:nth-child(4){
+    transition-timing-function: ease-out;
+    
+}
+.caja:nth-child(5){
+    transition-timing-function: ease-in-out;
+    
+}
+
+
+/*--------ANIMATIONS---------------------------*/
+
+.container2{
+    margin-top: 20px;
+    padding: 20px 5px;
+    background: rgb(255, 122, 102);
+
+}
+
+.caja2{
+    background: #025;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    position: relative;
+    animation-name: desplazarse1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes desplazarse1 {
+    0%{
+        left: 0;
+        background: #025;
+    }
+
+    50%{
+        background: red;
+
+    }
+
+    100%{
+        left: 80%;
+        background: green;
+
+    }
+    
+}
+/*Exaple 2*/
+.container3{
+    margin-top: 20px;
+    padding: 20px 5px;
+    background: rgb(255, 122, 102);
+
+}
+
+.caja3{
+    background: #025;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    position: relative;
+    animation-name: desplazarse2;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards; /*stay as the last animation*/
+}
+
+@keyframes desplazarse2 {
+    0%{
+        left: 0;
+        background: #025;
+    }
+
+    50%{
+        background: red;
+
+    }
+
+    100%{
+        left: 80%;
+        background: green;
+
+    }
+    
+}
+
+.caja4{
+    background: #025;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    position: relative;
+    animation-name: desplazarse3;
+    animation-duration: 3s;
+    animation-iteration-count: 1s;
+    animation-direction: alternate;
+    animation-fill-mode: both; /*to start with the color of the first animation*/
+    animation-delay: 1s;
+}
+
+@keyframes desplazarse3 {
+    0%{
+        left: 0;
+        background: #000;
+    }
+
+    50%{
+        background: red;
+    }
+
+    100%{
+        left: 80%;
+        background: green;
+
+    }
+    
+}
+/*-----TRANSFORM----*/
+
+.container5{
+    margin-top: 20px;
+    padding: 20px 5px;
+    background: rgb(255, 122, 102);
+
+}
+
+.caja5{
+    background: #025;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    position: relative;
+   display: flex;
+   color: #fff;
+    transition: transform 1s;
+    transform: translate(50px);
+}
+
+.caja5:hover{
+    transform: scaley(2) translate(40px);
+    transform: skew(20deg);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+b{
+    margin: auto;
+    transform: skew(-20deg);
+}
