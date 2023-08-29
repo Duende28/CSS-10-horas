@@ -1,0 +1,22 @@
+
+*{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 35px;
+    scroll-behavior: smooth;
+}
+
+.container{
+    padding: 20px;
+    background: #59f;
+    font-size: 20px;
+    direction: rtl;
+    letter-spacing: 5PX;
+    scroll-behavior: ;
+}
+
+#content{
+    background: red;
+    user-select: none;
+    text-shadow: 2px;
+}
